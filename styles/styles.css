@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
-* {
+*:not(.card, a, .container-c) {
     scroll-behavior: smooth;
-    
-}
+    box-sizing: border-box;
+  }  
 
 body {
     margin: 0; 
     overflow-x: hidden;
+    overflow-x: 0;
+    box-sizing: border-box;
 }
 
 .bg {
@@ -17,9 +19,11 @@ body {
     position: fixed;
     z-index: -1;
     transition: .5s ease-in-out;
+    box-sizing: border-box;
 }
 
 nav {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,6 +101,7 @@ section {
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(4px);
     position: relative;
+    box-sizing: border-box;
 }
 
 #home {
